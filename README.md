@@ -14,18 +14,19 @@ Normalized expression data(real and simulation) can be downloaded from [link](ht
 The conda environment installation file "scTGRN_environment.yaml" can be downloaded from this repository.
 
 # 5.scTGRN: infer the regulatory relationships of TF-gene pairs
+## 5.1 Data preprocessing
+* python script: 4D_input_tensors_construction.py<br>
+According to the selected positive and negative gene pair samples and the normalized gene expression matrix, we construct the 4D input tensor of each gene for the sample.<br>
+```
+python 4D_input_tensors_construction.py
+```
 The input data of scTGRN include: datasetName_gene_list_ref.txt, datasetName_gene_pairs_400.txt, datasetName_gene_pairs_400_num.txt, gene expression matrix(need to download through the previous website).
 * datasetName_gene_list_ref.txt: This file is a list of gene names from gene expression data converted to gene symbol ids. e.g., mesc1_gene_list_ref.txt. Format: "gene symbol ids\t sc gene id".
 * datasetName_gene_pairs_400.txt: This file is a list containing TF-gene pairs and their labels. e.g., mesc1_gene_pairs_400.txt. Format: "geneA\t    GeneB\t   label".
 * datasetName_gene_pairs_400_num.txt: This file is a list of indexes partitioned by the number of TF-gene pairs, where each number represents the index number corresponding to each TF. e.g., mesc1_gene_gene_pairs_400_num.txt. Format: "0\n  7136".
 * gene expression matrix: This file is the gene expression matrix for all genes at different time points.
-## 5.1 Data preprocessing
-* python script: 4D_input_tensors_construction.py<br>
-According to the selected positive and negative gene pair samples and the normalized gene expression matrix, we construct the 4D input tensor of each gene for the sample.
-```
-python 4D_input_tensors_construction.py
-```
 
+### The specific process of data preprocessing.
 ### Step1: Calculate a new "gene" called "AVG".
 AVG: represents the average expressions of all genes in each cell.
 ### Step2: Constructor the genome.
