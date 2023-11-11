@@ -41,4 +41,6 @@ Perform the above operations for the gene expression matrix at each time point.
 ## 5.2 Training and test ATCN model.
 * python script: training.py<br>
 `training.py` uses the 4D input tensor to train and test the ATCN model. The training set and test set are randomly divided by 8:2. The file path needs to be changed before training and before testing.
-
+```
+python training.py
+```
