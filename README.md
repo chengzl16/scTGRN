@@ -8,4 +8,7 @@ Four simulation datasets: sim1, sim2, sim3, sim4.
 ## Gene function assignment using scTGRN
 Mouse brain cortex: gene expression data of mouse brain cortexare available at GSE104158.
 ## Download link
-Normalized expression data(real and simulation) can be downloaded from [link](https://doi.org/10.5281/zenodo.6720690 "title text") directly.
+Normalized expression data(real and simulation) can be downloaded from [link](https://doi.org/10.5281/zenodo.6720690 "title text") directly. (based on https://github.com/ericcombiolab/dynDeepDRIM)
+
+# 2.Code Environment
+The conda environment installation file "scTGRN_environment.yaml" can be downloaded from this repository.
