@@ -1,5 +1,6 @@
 # Inferring Gene Regulatory Networks from Single-Cell Time-Course Data Based on Temporal Convolutional Networks
-
+# 1.scTGRN overview
+# 2.The network structure of scTGRN(ATCN)
 # 3.scRNA-seq datasets
 ## 3.1 Evaluation of scTGRN on real datasets
 Four real datasets：two of the real datasets are from mouse embryonic stem cells (mESC1 and mESC2) and two are from human embryonic stem cells (hESC1 and hESC2). Gene expression data of mESC1, mESC2, hESC1, hESC2 available at GSE79578,  GSE79578, E-MTAB-3929, GSE75748, respectively.
@@ -40,7 +41,8 @@ Perform the above operations for the gene expression matrix at each time point.
 
 ## 5.2 Training and test ATCN model.
 * python script: training.py<br>
-`training.py` uses the 4D input tensor to train and test the ATCN model. The training set and test set are randomly divided by 8:2. The file path needs to be changed before training and before testing.
+`training.py` uses the 4D input tensor to train and test the ATCN model. The training set and test set are randomly divided by 8:2. The file path needs to be changed before training and before testing.<br>
 ```
 python training.py
 ```
+File path of the 4D input tensor: datasetName_4D_input_tensors. e.g., mesc1_4D_input_tensors.<br>
