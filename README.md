@@ -15,8 +15,11 @@ The conda environment installation file "scTGRN_environment.yaml" can be downloa
 
 # 3.scTGRN: infer the regulatory relationships of TF-gene pairs
 The input data of scTGRN include: datasetName_gene_list_ref.txt, datasetName_gene_pairs_400.txt, datasetName_gene_pairs_400_num.txt, gene expression matrix(need to download through the previous website).
-[--]
+* datasetName_gene_list_ref.txt: This file is a list of gene names from gene expression data converted to gene symbol ids. e.g., mesc1_gene_list_ref.txt. Format: "gene symbol ids\t sc gene id".
+* datasetName_gene_pairs_400.txt: This file is a list containing TF-gene pairs and their labels. e.g., mesc1_gene_pairs_400.txt. Format: "geneA\t    GeneB\t   label".
+* datasetName_gene_pairs_400_num.txt: This file is a list of indexes partitioned by the number of TF-gene pairs, where each number represents the index number corresponding to each TF. e.g., mesc1_gene_gene_pairs_400_num.txt. Format: "0\n  7136".
+* gene expression matrix: This file is the gene expression matrix for all genes at different time points.
 ## 3.1 Data preprocessing
-
+* python script: 
 
 
