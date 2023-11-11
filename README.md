@@ -12,3 +12,6 @@ Normalized expression data(real and simulation) can be downloaded from [link](ht
 
 # 2.Code Environment
 The conda environment installation file "scTGRN_environment.yaml" can be downloaded from this repository.
+
+# 3.scTGRN: infer the regulatory relationships of TF-gene pairs
+
