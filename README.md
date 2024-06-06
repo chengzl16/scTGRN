@@ -1,6 +1,6 @@
 # Inferring Gene Regulatory Networks from Single-Cell Time-Course Data Based on Temporal Convolutional Networks
 # 1.scTGRN overview
-![](https://github.com/chengzl16/scTGRN/scTGRN.jpg)
+![](https://github.com/chengzl16/scTGRN/blob/main/scTGRN.jpg)
 # 2.The network structure of scTGRN(ATCN)
 ![](https://github.com/chengzl16/scTGRN/ATCN.jpg)
 # 3.scRNA-seq datasets
