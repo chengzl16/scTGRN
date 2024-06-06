@@ -2,7 +2,7 @@
 # 1.scTGRN overview
 ![](https://github.com/chengzl16/scTGRN/blob/main/scTGRN.jpg)
 # 2.The network structure of scTGRN(ATCN)
-![](https://github.com/chengzl16/scTGRN/ATCN.jpg)
+![](https://github.com/chengzl16/scTGRN/blob/main/ATCN.jpg)
 # 3.scRNA-seq datasets
 ## 3.1 Evaluation of scTGRN on real datasets
 Four real datasets：two of the real datasets are from mouse embryonic stem cells (mESC1 and mESC2) and two are from human embryonic stem cells (hESC1 and hESC2). Gene expression data of mESC1, mESC2, hESC1, hESC2 available at GSE79578,  GSE79578, E-MTAB-3929, GSE75748, respectively.
